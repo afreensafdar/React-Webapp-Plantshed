@@ -3,13 +3,15 @@ import "./App.css";
 import Cart from "./components/Cart";
 import CoffeeList from "./components/CoffeeList";
 import { Footer } from "./components/Footer";
-import Navbar from "./components/Navbar";
+import ButtonAppbar from "./components/ButtonAppbar";
 import PlantList from "./components/PlantList";
+import 'fontsource-roboto'
+import Typography from '@material-ui/core/Typography'
 
 function App() {
   return (
     <div className="App">
-      <Navbar></Navbar>
+      <ButtonAppbar></ButtonAppbar>
       <Switch>
         <Route path="/plants">
           <PlantList />
@@ -22,6 +24,7 @@ function App() {
         </Route>
       </Switch>
       <Footer></Footer>
+     
     </div>
   );
 }
