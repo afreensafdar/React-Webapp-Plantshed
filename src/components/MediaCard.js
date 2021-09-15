@@ -11,6 +11,7 @@ import Typography from "@material-ui/core/Typography";
 const useStyles = makeStyles({
   root: {
     maxWidth: 345,
+    margin: 20,
   },
   media: {
     height: 140,
@@ -25,25 +26,29 @@ export default function MediaCard() {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image="/static/images/cards/contemplative-reptile.jpg"
+          image="https://www.plantshed.com//media/catalog/product/cache/1/image/600x600/040ec09b1e35df139433887a97daa66f/p/s/ps28225-minijade-crassulaovata-4_navarro_1.jpg"
           title="Contemplative Reptile"
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            Lizard
+          <Typography align="center" gutterBottom variant="h5" component="h2">
+            Mini Jade
           </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
+          <Typography
+            align="center"
+            variant="body2"
+            color="textSecondary"
+            component="p"
+          >
+            $12.00
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
         <Button size="small" color="primary">
-          Share
+          Details
         </Button>
         <Button size="small" color="primary">
-          Learn More
+          Add To Cart
         </Button>
       </CardActions>
     </Card>
